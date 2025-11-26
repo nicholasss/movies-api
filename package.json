@@ -1,9 +1,9 @@
 {
   "name": "movie-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "trying out express v5 with node v24 and mongodb",
   "license": "ISC",
-  "author": "",
+  "author": "nicholas",
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
