@@ -1,25 +1,30 @@
 {
-  "name": "movie-api",
-  "version": "1.0.0",
-  "description": "trying out express v5 with node v24 and mongodb",
-  "license": "ISC",
-  "author": "nicholas",
-  "type": "commonjs",
-  "main": "server.js",
-  "scripts": {
-    "lint": "npx eslint --ignore-pattern \"package*.json\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "engines": {
-    "node": ">=24.11.0 <25.0.0"
-  },
-  "dependencies": {
-    "express": "^5.1.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "@eslint/json": "^0.14.0",
-    "eslint": "^9.39.1",
-    "globals": "^16.5.0"
-  }
+	"name": "movie-api",
+	"version": "1.0.0",
+	"description": "trying out express v5 with node v24 and mongodb",
+	"license": "ISC",
+	"author": "nicholas",
+	"type": "commonjs",
+	"main": "server.js",
+	"prettier": {
+		"singleQuote": true
+	},
+	"scripts": {
+		"dev": "nodemon",
+		"lint": "npx eslint --ignore-pattern \"package*.json\"",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"engines": {
+		"node": ">=24.11.0 <25.0.0"
+	},
+	"dependencies": {
+		"express": "^5.1.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.39.1",
+		"@eslint/json": "^0.14.0",
+		"eslint": "^9.39.1",
+		"globals": "^16.5.0",
+		"nodemon": "^3.1.11"
+	}
 }
