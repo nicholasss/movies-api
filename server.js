@@ -1,5 +1,8 @@
 // server.js
 
+// load .env
+require('@dotenvx/dotenvx').config();
+
 const mongoose = require('mongoose');
 const initApp = require('./app.js');
 
