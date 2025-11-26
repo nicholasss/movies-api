@@ -4,7 +4,7 @@
 	"description": "trying out express v5 with node v24 and mongodb",
 	"license": "ISC",
 	"author": "nicholas",
-	"type": "commonjs",
+	"type": "module",
 	"main": "server.js",
 	"prettier": {
 		"singleQuote": true
