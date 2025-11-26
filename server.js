@@ -1,0 +1,11 @@
+// server.js
+
+const initApp = require('./app.js');
+
+const app = initApp();
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+	console.log(`Server is running on localhost:${PORT}`);
+});
