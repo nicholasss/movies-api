@@ -9,6 +9,12 @@ import app from './app.js';
 const PORT = process.env.PORT || 3000;
 const MONGODB_URI = process.env.MONGODB_URI;
 
+// check if undefined or null, will not throw ReferenceError
+if (MONGODB_URI == null) {
+	console.error('Failed to load MONGODB_URI from .env');
+	process.exit(1);
+}
+
 async function startServer() {
 	try {
 		await mongoose.connect(MONGODB_URI);
