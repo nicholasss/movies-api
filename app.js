@@ -2,6 +2,7 @@
 
 // imports
 import express from 'express';
+import { getMovies } from './controllers/moviesController.js'
 
 // making app
 const app = express();
@@ -30,10 +31,13 @@ app.use((req, res, next) => {
 	console.log(logInfo);
 });
 
-// hello world
+// health check
 app.get('/', (req, res) => {
-	res.json({ message: 'Hello World!' });
+	res.json({ 'current_health': '200 OK' });
 });
+
+// get all movies
+app.get('/movies', getMovies);
 
 // 404 handler
 app.use((req, res, next) => {
