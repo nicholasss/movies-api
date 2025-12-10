@@ -5,17 +5,17 @@
 To run the server in development mode:
 
 ```sh
-> bun dev
+npm run dev
 ```
 
 To run ESLint:
 
 ```sh
-bun lint
+npm run lint
 ```
 
 To run tests:
 
 ```sh
-bun test
+npm run test
 ```

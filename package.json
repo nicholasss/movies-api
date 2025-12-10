@@ -11,7 +11,7 @@
 	},
 	"scripts": {
 		"dev": "nodemon",
-		"lint": "npx run eslint --ignore-pattern \"package*.json\"",
+		"lint": "eslint --config eslint.config.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"engines": {
@@ -26,6 +26,7 @@
 		"@eslint/js": "^9.39.1",
 		"@eslint/json": "^0.14.0",
 		"eslint": "^9.39.1",
+		"globals": "^16.5.0",
 		"nodemon": "^3.1.11"
 	}
 }
