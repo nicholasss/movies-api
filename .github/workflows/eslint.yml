@@ -18,6 +18,7 @@ jobs:
           node-version: 24
           cache: "npm"
 
+      - run: ls -lha
       - run: npm ci
 
       # Use the default 'stylish' format so the problem matcher can read it
