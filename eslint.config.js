@@ -3,5 +3,16 @@ import globals from "globals";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig([
-  { files: ["**/*.{js,mjs,cjs}"], plugins: { js }, extends: ["js/recommended"], languageOptions: { globals: globals.node } },
+	// Spread the recommended configuration first
+	js.configs.recommended,
+
+	{
+		files: ["**/*.{js,mjs,cjs}"],
+		languageOptions: {
+			globals: globals.node,
+		},
+		rules: {
+			"no-unused-vars": "warn",
+		},
+	},
 ]);
